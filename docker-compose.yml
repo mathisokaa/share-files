@@ -9,7 +9,7 @@ services:
       - PORT=3000
       - DEFAULT_TTL_HOURS=24
       - MAX_TTL_HOURS=168
-      - PUBLIC_BASE_URL=
+      - PUBLIC_BASE_URL=https://shareia.mathisoka.fr
     volumes:
       - share-files-uploads:/app/uploads
 

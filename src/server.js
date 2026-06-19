@@ -65,6 +65,7 @@ const upload = multer({
 });
 
 const app = express();
+app.set('trust proxy', true);
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
 function baseUrl(req) {
