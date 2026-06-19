@@ -1,0 +1,14 @@
+{
+  "name": "share-files",
+  "version": "1.0.0",
+  "description": "Depose un fichier, recois un lien telechargeable par curl, expire automatiquement.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^9.0.1"
+  }
+}

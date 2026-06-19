@@ -1,0 +1,17 @@
+services:
+  share-files:
+    build: .
+    container_name: share-files
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - DEFAULT_TTL_HOURS=24
+      - MAX_TTL_HOURS=168
+      - PUBLIC_BASE_URL=
+    volumes:
+      - share-files-uploads:/app/uploads
+
+volumes:
+  share-files-uploads:
