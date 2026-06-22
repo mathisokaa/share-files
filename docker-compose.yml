@@ -9,7 +9,7 @@ services:
       - PORT=3000
       - DEFAULT_TTL_HOURS=24
       - MAX_TTL_HOURS=168
-      - PUBLIC_BASE_URL=https://your-domain.example
+      - PUBLIC_BASE_URL=https://your-domain.fr
     volumes:
       - share-files-uploads:/app/uploads
 
